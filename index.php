@@ -15,11 +15,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
      <!-- Icons -->
-     <link href="recursos/img/icon/icon.jpg" rel="icon">
-     <link href="recursos/img/icon/icon.jpg" rel="apple-touch-icon">
+     <link href="assets\favicon.jpg" rel="icon">
+     <link href="assets\favicon.jpg" rel="apple-touch-icon">
 
      <!-- Css -->
-     <link rel="stylesheet" href="recursos/css/style.css">
+     <link rel="stylesheet" href="css\styles.css">
 
      <!-- Fonts -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,14 +30,31 @@
 
 </head>
 <body>
+        <!-- Menu -->
         <?php
                 include("navbar.php")
         ?>
         
         <header class="cabecalho"> 
                  <h1> Aqui você vai aprender tudo sobre os SO Linux!</h1> 
+                <h1> Presente nos <strong>maiores</strong> servidores do mundo! <h1>
+                <h1> O único sistema operacional <strong>software livre</strong>  <h1>
+                <h1> Os mais renomados programadores <strong>usam</strong>  <h1>
         </header>  
 
-        <footer> </footer>
+        <main> 
+                
+        </main>
+
+        <!-- Rodapé -->
+        <?php
+                include("copyright.php")
+        ?>
 </body>
 </html>
+
+<?php
+
+$var = 'Hacklang' 
+
+?>

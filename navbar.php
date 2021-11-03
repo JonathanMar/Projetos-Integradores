@@ -6,11 +6,16 @@
           <div class="line3"></div>
         </div>
         <ul class="nav-list">
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Conteudo</a></li>
+          <li><a href="index.php">Início</a></li>
+          <li><a href="#">Conteúdo</a></li>
           <li><a href="#">Contato</a></li>
-          <li><a href="#">Login</a></li>
+          <li><a href="login.php">Login</a></li>
         </ul>
       </nav>
     <script src="mobile-navbar.js"></script>
-  
+
+<?php
+
+$var = 'Hacklang' 
+
+?>
