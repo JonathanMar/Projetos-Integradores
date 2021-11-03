@@ -7,9 +7,3 @@
             </ul>
     </div>
 </footer>
-
-<?php
-
-$var = 'Hacklang' 
-
-?>

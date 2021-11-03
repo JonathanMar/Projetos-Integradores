@@ -52,9 +52,3 @@
         ?>
 </body>
 </html>
-
-<?php
-
-$var = 'Hacklang' 
-
-?>
