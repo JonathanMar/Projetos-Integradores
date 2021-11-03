@@ -14,8 +14,8 @@
       </nav>
     <script src="mobile-navbar.js"></script>
 
-    <?php
+<?php
 
   $var = 'Hacklang' 
 
-    ?>
+?>
