@@ -35,16 +35,8 @@
         <?php
                 include("navbar.php")
         ?>
-        
-        <header class="cabecalho"> 
-                 <h1> Aqui você aprende <span>tudo</span> sobre os <span>SO Linux!</span></h1>
-        </header>  
 
-        <main> 
-                <div class="text">
-                        <h2>teste</h2>
-                </div>
-        </main>
+
 
         <!-- Rodapé -->
         <?php

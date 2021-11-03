@@ -5,16 +5,15 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color: #333333;
-}
-
 /* Menu */
-
 a {
   color: #fff;
   text-decoration: none;
   transition: 0.3s;
+}
+
+body {
+  background-color: #333333;
 }
 
 a:hover {
@@ -118,31 +117,146 @@ nav {
 .cabecalho{
   grid-area: cabecalho;
   height: 88vh;
-  background: #333333;
+  background-color: #333333;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 10px;
   position: flex;
-  
 } 
 
 .cabecalho > h1{
+  cursor: pointer;
   color: #fe9b0e;
+  font-size: 4rem;
+}
+
+h1 span{
+  transition: .5s linear
+}
+h1:hover span:nth-child(1){
+  margin-right: 5px
+}
+h1:hover span:nth-child(1):after{
+  
+}
+h1:hover span:nth-child(2){
+  margin-left: 5px
+}
+h1:hover span{
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
+}
+
+/* Contato */
+.title{
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: #fe9b0e;
+  font-size: 4rem;
+}
+
+.contact {
+  color: #eee;
+}
+
+.contact input[type='submit'] {
+  background-color: #ea4c88;
+  color: #eee;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact label, textarea{
+  background-color: #363b41;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  padding-left: 20px;
+  padding-left: 1.25rem;
+  padding-right: 20px;
+  padding-right: 1.25rem;
+}
+
+
+.contact input[type='submit']:focus,
+.contact input[type='submit']:hover {
+  background-color: #d44179;
+}
+
+.contact textarea{
+  border: 0;
+  border-radius: 0.25rem;
+  height: 100px;
+  width: 100%;
+  padding: 16px;
+  padding: 1rem;
+  font: inherit;
+  color: white;
+}
+
+.contact label,
+.contact input[type='number'],
+.contact input[type='text'],
+.contact input[type='submit'] {
+  border-radius: 0.25rem;
+  padding: 16px;
+  padding: 1rem;
+}
+
+.contact label {
+  background-color: #363b41;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  padding-left: 20px;
+  padding-left: 1.25rem;
+  padding-right: 20px;
+  padding-right: 1.25rem;
+}
+
+.contact input[type='password'],
+.contact input[type='text'] {
+  background-color: #3b4148;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.contact textarea[type='text']:focus,
+.contact textarea[type='text']:hover,
+.contact input[type='email']:focus,
+.contact input[type='email']:hover,
+.contact input[type='text']:focus,
+.contact input[type='text']:hover {
+  background-color: #434a52;
+}
+
+.contact input[type='submit'] {
+  background-color: #ea4c88;
+  color: #eee;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact input[type='submit']:focus,
+.contact input[type='submit']:hover {
+  background-color: #d44179;
 }
 
 /* Login */
-
 .conteudo {
-  margin-top: 15%;
-  background: #333333;
+  margin-top: 10%;
   width:100%;
-  height:80vh;
 }
 
-.content{
-  
+.content {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.63);
+  border-radius: 5%;
 }
 
 .grid {
@@ -150,6 +264,11 @@ nav {
   margin-right: auto;
   max-width: 320px;
   max-width: 20rem;
+}
+
+.grid p {
+    padding: 5px;
+    text-align: center;
 }
 
 .hidden {
@@ -198,6 +317,7 @@ input[type='submit'] {
   margin: -0.875rem;
 }
 
+.form input[type='number'],
 .form input[type='password'],
 .form input[type='text'],
 .form input[type='submit'] {
@@ -218,12 +338,12 @@ input[type='submit'] {
           flex: 1;
 }
 
-
 .login {
   color: #eee;
 }
 
 .login label,
+.login input[type='number'],
 .login input[type='text'],
 .login input[type='password'],
 .login input[type='submit'] {
@@ -268,6 +388,11 @@ input[type='submit'] {
   background-color: #d44179;
 }
 
+/* teste */
+.text {
+  background-color: white;
+}
+
 /* Copyright */
 .copyright {
   background-color: #000000;
@@ -278,6 +403,9 @@ input[type='submit'] {
 }
 
 footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
   margin-bottom: 0px;
   height: 4vh;
   display: flex;
@@ -302,8 +430,19 @@ footer {
   margin-left: 32px;
 }
 
+@media (max-width: 999px) {
+  .footer-logo{
+      font-size: 0.5rem;
+      display: flex;
+      display: inline-block;
+  }
 
+  .footer-list a{
+    font-size: 0.9rem;
+    margin-right: 5px;
+  }
 
+}
 
 
 .color {
