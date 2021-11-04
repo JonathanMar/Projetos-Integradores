@@ -36,11 +36,53 @@
                 include("navbar.php")
         ?>
 
+        <!-- Conteúdo -->
 
+        <section class="grid3">
+
+      <div class="grid3-item">
+        <img src="assets\img\imagens\Melhor distribuição para começar no linux.jpg" height="250px" width="600px">
+        <a href="melhores-distribuições-linux.php"><p>Melhor distribuição linux para iniciantes</p></a>
+      </div>
+
+      <div class="grid3-item">
+        <img src="assets\img\imagens\windwosStore.png" height="250px" width="600px">
+        <p>Qual a Windows Store do linux?</p>
+      </div>
+      <div class="grid3-item">
+        <img src="assets\img\imagens\comandos-basicos-linux.png" height="250px" width="600px">
+        <p>Comandos básicos linux</p> 
+      </div>
+      <div class="grid3-item">
+        <img src="assets\img\imagens\melhor-editor-de-video.jpg" height="250px" width="600px">
+        <p>Melhor editor de vídeo Open Source</p>
+      </div>
+      <div class="grid3-item">
+        <img src="assets\img\imagens\pessoa-fone.jpg" height="250px" width="600px">
+        <p>Fone de ouvido bluetooth no Linux</p>
+      </div>
+      
+      <div class="grid3-item">
+        <img src="assets\img\imagens\kernel.jpg" height="250px" width="600px">
+        <p>O que é Kernel?</p>
+      </div>
+
+      <div class="grid3-item">
+        <img src="assets\img\imagens\historia-linux.jpg" height="250px" width="600px">
+        <p>Conheca a história do linux</p>
+      </div>
+
+      <div class="grid3-item">
+        <img src="assets\img\imagens\ubuntu.jpg" height="250px" width="600px">
+        <p>Como baixar o Ubuntu</p>
+      </div>
+    </section>
 
         <!-- Rodapé -->
+        <!--
         <?php
                 include("copyright.php")
         ?>
+        -->
 </body>
 </html>
