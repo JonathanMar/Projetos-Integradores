@@ -38,51 +38,44 @@
 
         <!-- Conteúdo -->
 
-        <section class="grid3">
+        <div id="grid"> 
 
-      <div class="grid3-item">
-        <img src="assets\img\imagens\Melhor distribuição para começar no linux.jpg" height="250px" width="600px">
-        <a href="melhores-distribuições-linux.php"><p>Melhor distribuição linux para iniciantes</p></a>
-      </div>
+          <div class="grid-item">
+          <a href="melhores-distribuicoes-linux.php"> <img src="assets\img\imagens\Melhor distribuição para começar no linux.jpg" height="314px" width="503px"> 
+          <div class="grid-text"> <p>Melhor distribuição linux para iniciantes</p> </a></div>
+          </div>
 
-      <div class="grid3-item">
-        <img src="assets\img\imagens\windwosStore.png" height="250px" width="600px">
-        <p>Qual a Windows Store do linux?</p>
-      </div>
-      <div class="grid3-item">
-        <img src="assets\img\imagens\comandos-basicos-linux.png" height="250px" width="600px">
-        <p>Comandos básicos linux</p> 
-      </div>
-      <div class="grid3-item">
-        <img src="assets\img\imagens\melhor-editor-de-video.jpg" height="250px" width="600px">
-        <p>Melhor editor de vídeo Open Source</p>
-      </div>
-      <div class="grid3-item">
-        <img src="assets\img\imagens\pessoa-fone.jpg" height="250px" width="600px">
-        <p>Fone de ouvido bluetooth no Linux</p>
-      </div>
-      
-      <div class="grid3-item">
-        <img src="assets\img\imagens\kernel.jpg" height="250px" width="600px">
-        <p>O que é Kernel?</p>
-      </div>
+          <div class="grid-item">
+          <a href="melhores-distribuicoes-linux.php"> <img src="assets\img\imagens\windwosStore.png" height="314px" width="503px"> 
+          <div class="grid-text"> <p>Qual a Windows Store do Linux?</p> </a></div>
+          </div>
 
-      <div class="grid3-item">
-        <img src="assets\img\imagens\historia-linux.jpg" height="250px" width="600px">
-        <p>Conheca a história do linux</p>
-      </div>
+          <div class="grid-item">
+          <a href="melhores-distribuicoes-linux.php"> <img src="assets\img\imagens\melhor-editor-de-video.jpg" height="314px" width="503px"> 
+          <div class="grid-text"> <p>Melhor editor de vídeo Open Source</p> </a></div>
+          </div>
 
-      <div class="grid3-item">
-        <img src="assets\img\imagens\ubuntu.jpg" height="250px" width="600px">
-        <p>Como baixar o Ubuntu</p>
-      </div>
-    </section>
+          <div class="grid-item">
+          <a href="melhores-distribuicoes-linux.php"> <img src="assets\img\imagens\pessoa-fone.jpg" height="314px" width="503px"> 
+          <div class="grid-text"> <p>Fone de ouvido bluetooth no Linux</p> </a></div>
+          </div>
+
+          <div class="grid-item">
+          <a href="melhores-distribuicoes-linux.php"> <img src="assets\img\imagens\Melhor distribuição para começar no linux.jpg" height="314px" width="503px"> 
+          <div class="grid-text"> <p>Como baixar o Ubuntu</p> </a></div>
+          </div>
+
+          <div class="grid-item">
+          <a href="melhores-distribuicoes-linux.php"> <img src="assets\img\imagens\kernel.jpg" height="314px" width="503px"> 
+          <div class="grid-text"> <p>O que é Kernel?</p> </a></div>
+          </div>
+          
+        </div>
 
         <!-- Rodapé -->
-        <!--
-        <?php
+       <!-- <?php
                 include("copyright.php")
-        ?>
-        -->
+        ?> -->
+        
 </body>
 </html>
