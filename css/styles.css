@@ -323,7 +323,9 @@ h1:hover span{
 .contact input[type='email']:focus,
 .contact input[type='email']:hover,
 .contact input[type='text']:focus,
-.contact input[type='text']:hover {
+.contact input[type='text']:hover,
+login__email
+{
   background-color: #434a52;
 }
 
@@ -462,7 +464,9 @@ input[type='submit'] {
 .login input[type='password']:hover,
 .login input[type='text']:focus,
 .login input[type='tel']:focus,
-.login input[type='text']:hover {
+.login input[type='text']:hover,
+.login input[type='email']:focus,
+.login input[type='email']:hover {
   background-color: #434a52;
 }
 
@@ -478,18 +482,38 @@ input[type='submit'] {
   background-color: #d44179;
 }
 
-.is-danger{
+.is-danger {
   background-color: red;
   border-radius: 5px;
   margin: 5px;
- box-shadow:1px 1px 1px #0a0a0a54;
+  box-shadow:1px 1px 1px #0a0a0a54;
 }
 
 .is-danger > p{
   font-size: 1.2rem;  
   font-weight: bold;
-  
 }
+
+.is-success {
+  background-color: green;
+  border-radius: 5px;
+  margin: 5px;
+  box-shadow:1px 1px 1px #0a0a0a54;
+}
+
+.is-danger > p{
+  font-size: 1.2rem;  
+  font-weight: bold;
+}
+
+.is-info {
+  background-color: blue;
+  border-radius: 5px;
+  margin: 5px;
+  box-shadow:1px 1px 1px #0a0a0a54;
+
+}
+
 
 
 /* Copyright */
