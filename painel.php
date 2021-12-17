@@ -1,5 +1,7 @@
 <?php 
 include("conexao.php");
+
+
 $consulta = "SELECT * FROM usuario";
 $con      = $conexao->query($consulta) or die($mysqli->error);
 

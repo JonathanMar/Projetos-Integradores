@@ -8,7 +8,7 @@
         <ul    class = "nav-list">
         <li><a href  = "index.php">Início</a></li>
         <li><a href  = "Conteudo.php">Conteúdo</a></li>
-        <li><a href  = "contato.php">Contato</a></li>
+        <li><a href  = "create_account.php">Cadastro</a></li>
         <li><a href  = "login.php">Login</a></li>
         </ul>
       </nav>

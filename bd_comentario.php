@@ -2,6 +2,7 @@
 session_start();
 include("conexao.php");
 
+//$usuario       = mysqli_real_escape_string($conexao, trim($_POST['usuario']));
 $comentario    = mysqli_real_escape_string($conexao, trim($_POST['comentario']));
 $identificacao = mysqli_real_escape_string($conexao, trim($_POST['identificacao']));
 

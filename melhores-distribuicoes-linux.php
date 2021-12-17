@@ -1,6 +1,12 @@
 <?php 
 include("conexao.php");
 session_start();
+
+$usuario = $_SESSION['usuario'];
+
+
+
+
 $consulta = "SELECT * FROM usuario";
 $con      = $conexao->query($consulta) or die($mysqli->error);
 ?>
@@ -37,7 +43,7 @@ $con      = $conexao->query($consulta) or die($mysqli->error);
 
 
 </head>
-<body>
+<body>  
         <!-- Menu -->
         <?php
             include("navbar.php")
@@ -84,32 +90,33 @@ $con      = $conexao->query($consulta) or die($mysqli->error);
                     </div>
         
                     <input type = "hidden" name = "identificacao" value = "Melhor-distribuição-para-começar-no-linux">
+                    <!--<input type = "hidden" name = "usuario" value = "<?php echo $usuario; ?>">-->
         
           <div   class = "form__field">
           <input id    = "comentar" type = "submit" value = "Comentar">
           </div>
         
         </form>
+        <div class="form__field">
+        <p class = "text--center"> Não tem uma conta? <a href = "create_account.php"> Criar conta </a> </p>
+        </div>
         
                 <div class = "coment">
                 <?php
                 $sql = "SELECT * FROM comentario WHERE identificacao ='Melhor-distribuição-para-começar-no-linux' ORDER BY comentario_id desc";
                 $sql = mysqli_query($conexao, $sql);
                 $row = mysqli_num_rows($sql);
-                
                         if ($row > 0) {
                                 while ($linha = mysqli_fetch_array($sql)) {
                                         $comentario = $linha['comentario'];
-                                        echo '<br>' . $comentario . ' - ' . date('d/m/Y', strtotime($linha['data_comentario'])) . '</br>';
+                                        echo '<div class="linha-coment">
+                                                <p><strong>' . $usuario . '</strong>' . ' - ' . date('d/m/Y', strtotime($linha['data_comentario'])) .'</p> </p>' . $comentario . '</p></div>';
                                 }
                         } else {
                                 echo "Ainda não existe comentários. Seja o primeiro a comentar!";
                         }
                         ?> 
-                
                         </div>
-
-
                 </div>
         </div>
 
