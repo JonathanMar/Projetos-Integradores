@@ -1,13 +1,14 @@
 <?php
 session_start();
 include("conexao.php");
+$usuario_cm = $_SESSION['usuario_cm'];
 
-//$usuario       = mysqli_real_escape_string($conexao, trim($_POST['usuario']));
 $comentario    = mysqli_real_escape_string($conexao, trim($_POST['comentario']));
 $identificacao = mysqli_real_escape_string($conexao, trim($_POST['identificacao']));
+$usuario_cm       = mysqli_real_escape_string($conexao, trim($_POST['usuario']));
 
 
-$sql = "INSERT INTO comentario (comentario, identificacao, data_comentario) VALUES ('$comentario', '$identificacao', NOW())";
+$sql = "INSERT INTO comentario (comentario, identificacao, usuario_cm, data_comentario) VALUES ('$comentario', '$identificacao', '$usuario_cm', NOW())";
 
 if($conexao->query($sql) === TRUE) {
 	$_SESSION['status_cadastro'] = true;

@@ -1,2 +1,2 @@
-
-TRUNCATE TABLE comentario;
+select *from comentario;
+truncate comentario;

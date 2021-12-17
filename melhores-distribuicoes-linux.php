@@ -90,7 +90,7 @@ $con      = $conexao->query($consulta) or die($mysqli->error);
                     </div>
         
                     <input type = "hidden" name = "identificacao" value = "Melhor-distribuição-para-começar-no-linux">
-                    <!--<input type = "hidden" name = "usuario" value = "<?php echo $usuario; ?>">-->
+                    <input type = "hidden" name = "usuario" value = <?php echo $usuario ?>>
         
           <div   class = "form__field">
           <input id    = "comentar" type = "submit" value = "Comentar">
@@ -113,7 +113,7 @@ $con      = $conexao->query($consulta) or die($mysqli->error);
                                                 <p><strong>' . $usuario . '</strong>' . ' - ' . date('d/m/Y', strtotime($linha['data_comentario'])) .'</p> </p>' . $comentario . '</p></div>';
                                 }
                         } else {
-                                echo "Ainda não existe comentários. Seja o primeiro a comentar!";
+                                echo '<div class="comentario-null">' . "Ainda não existe comentários. Seja o primeiro a comentar!" . '</div>';
                         }
                         ?> 
                         </div>
