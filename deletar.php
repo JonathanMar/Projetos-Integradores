@@ -12,7 +12,7 @@
 
         if($result->num_rows > 0)
         {
-            $sqlDelete = "DELETE FROM usuarios WHERE usuario_id=$id";
+            $sqlDelete    = "DELETE FROM usuarios WHERE usuario_id=$id";
             $resultDelete = $conexao->query($sqlDelete);
         }
     }
