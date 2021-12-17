@@ -36,21 +36,44 @@ include("conexao.php");
 
 </head>
 <body>
-        <!-- Menu -->
-        <?php
-                include("navbar.php")
+        
+<?php
+            include("navbar.php")
         ?>
         
         <!-- Cabeçalho -->
         <div class = "content">
-        <div class = "titulo">title</div>
-        <div class = "info-titulo">
-            <p>Publicado: x</p>  <p>Última actualização: x</p>
+                <div class = "titulo"> Melhor distribuição para começar no linux </div>
+                <div class = "info-titulo">
+                <p>Publicado: Setembro 8, 2020</p>  <p>Última actualização: Outubro 26, 2021</p>
+                </div>
+
+            <div class = "box-img">
+                <img class = "content-img" src = "assets\img\imagens\Melhor distribuição para começar no linux.jpg">
             </div>
 
-            <p>text</p>
+            <p>Tal pergunta que é frequentemente feita por pessoas que querem iniciarem nesse mundo das distribuições linux, não tem uma resposta muito clara, já que cada pessoa tem suas preferencias e facilidades, mas vamos tentar ser o mais sucintos possíveis e tentar responder essa pergunta.</p>
 
-            <img class = "content-img" src = "assets\img\imagens\X">
+            <p> Os principais pontos que devem serem levados em conta é as preferencias e facilidades do usuário, assim como foi citado acima, sendo diferencas mais relevantes entre as distros o seu objetivo.</p>
+
+            <p><strong> Compatibilidade com softwares: </strong></p>
+            <p> A compatibilidade com os softwares que se usa no dia a dia é uma coisa essencial na escolha da distro, já que alguns programas não são compativeis, assim podendo atrapalhar funções do seu trabalho ou lazer.
+            </p>
+
+            <p><strong> Interface gráfica: </strong></p>
+            <p> Algumas distribuições tem um foco em servidores, e não tem interface gráfica, assim podendo ser usado somente por meio de linhas de código.</p>
+
+            <p><strong> Comunidade: </strong></p>
+            <p> Quando surgirem dívidas ou erros você vai ter que procurar a solução por meio de vídeos na internet ou fóruns, tais coisas que são produzidas pela comunidade que usam a distribuição em questão e já passam por esse problema, então é de extrema importancia se observar a comunidade da distro que você está pensando em instalar.<p>
+
+            <p><strong > ZorinOS </strong></p>
+            <div class = "box-img">
+            <img class = "content-img" src = "assets\img\imagens\zorionOS.jpg" height = "500px" width = "750px">
+            </div>
+
+            
+            <p> Tendo em vista todos os pontos ressaltados, a distro que nos do mundo linux mais recomendamos é a ZorinOS, pois a mesma foi feita com base no conhecido Ubuntu e tem a sua interface gráfica inteiramente feita para atender tanto pessoas que estão acostumadas com o Windows ou MacOS, também tendo diversas versões para atender computadores mais antigos e estudantes. </p>
+            
          
         <!-- Comentário -->
         <?php include("Comentario.php"); ?>
@@ -61,8 +84,5 @@ include("conexao.php");
 </div>
 </div>
         
-        <?php
-                include("copyright.php")
-        ?>
 </body>
 </html>

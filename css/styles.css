@@ -189,6 +189,12 @@ h1:hover span{
 
 .content textarea {
   color: white;
+  width: 700px;
+}
+
+.textarea{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .content > p {
@@ -207,14 +213,15 @@ h1:hover span{
 
 /* Comentário */
 .coment {
-  background-color: red;
+  background-color: #555d62;
+  border-radius: 5px;
   margin: 20px;
   padding: 10px;
   text-align: center;
 }
 
 .comentar {
-  margin: 0px 450px;
+  width: 400px;
 }
 
 /* Contato */
@@ -390,6 +397,7 @@ input[type='submit'] {
   display: flex;
   margin: 14px;
   margin: 0.875rem;
+  justify-content: center;
 }
 
 .form__input {
@@ -671,6 +679,7 @@ footer {
   .titulo {
     font-size: 2.5rem;
     padding: 5px;
+    text-align: center;
   }
 
   .info-titulo {
@@ -678,6 +687,14 @@ footer {
     padding: 10px;
   }
 
+  .text--center {
+    text-align:center;
+  }
+
+  .box-img {
+    display: flex;
+    justify-content: center;
+  }
   .content-img {
     margin-left: 0%;
     padding: 1px;

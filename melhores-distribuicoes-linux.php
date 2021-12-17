@@ -1,6 +1,8 @@
 <?php 
-session_start(); 
 include("conexao.php");
+session_start();
+$consulta = "SELECT * FROM usuario";
+$con      = $conexao->query($consulta) or die($mysqli->error);
 ?>
 
 <!DOCTYPE html>
@@ -48,7 +50,9 @@ include("conexao.php");
             <p>Publicado: Setembro 8, 2020</p>  <p>Última actualização: Outubro 26, 2021</p>
             </div>
 
+            <div class = "box-img">
             <img class = "content-img" src = "assets\img\imagens\Melhor distribuição para começar no linux.jpg">
+            </div>
 
             <p>Tal pergunta que é frequentemente feita por pessoas que querem iniciarem nesse mundo das distribuições linux, não tem uma resposta muito clara, já que cada pessoa tem suas preferencias e facilidades, mas vamos tentar ser o mais sucintos possíveis e tentar responder essa pergunta.</p>
 
@@ -65,10 +69,13 @@ include("conexao.php");
             <p> Quando surgirem dívidas ou erros você vai ter que procurar a solução por meio de vídeos na internet ou fóruns, tais coisas que são produzidas pela comunidade que usam a distribuição em questão e já passam por esse problema, então é de extrema importancia se observar a comunidade da distro que você está pensando em instalar.<p>
 
             <p><strong > ZorinOS </strong></p>
-            <img class = "content-img" src = "assets\img\imagens\zorionOS.jpg" height = "500px" width = "750px" >
-            <p> Tendo em vista todos os pontos ressaltados, a distro que nos do mundo linux mais recomendamos é a ZorinOS, pois a mesma foi feita com base no conhecido Ubuntu e tem a sua interface gráfica inteiramente feita para atender tanto pessoas que estão acostumadas com o Windows ou MacOS, também tendo diversas versões para atender computadores mais antigos e estudantes. </p>
+            <div class = "box-img">
+            <img class = "content-img" src = "assets\img\imagens\zorionOS.jpg" height = "500px" width = "750px">
 
-  <!-- Comentário -->
+            </div>
+            <p> Tendo em vista todos os pontos ressaltados, a distro que nos do mundo linux mais recomendamos é a ZorinOS, pois a mesma foi feita com base no conhecido Ubuntu e tem a sua interface gráfica inteiramente feita para atender tanto pessoas que estão acostumadas com o Windows ou MacOS, também tendo diversas versões para atender computadores mais antigos e estudantes. </p>
+            
+            <!-- Comentário -->
   <div  class  = "comentario">
   <form action = "bd_comentario.php" method = "POST" class = "form login">
 
@@ -84,7 +91,6 @@ include("conexao.php");
         
         </form>
         
-                <p   class = "text--center"> Não está logado? <a href = "login.php"> Login </a> </p>
                 <div class = "coment">
                 <?php
                 $sql = "SELECT * FROM comentario WHERE identificacao ='Melhor-distribuição-para-começar-no-linux' ORDER BY comentario_id desc";
@@ -106,7 +112,8 @@ include("conexao.php");
 
                 </div>
         </div>
-        >
+
+  
         <!-- 
         <?php
                 include("copyright.php")

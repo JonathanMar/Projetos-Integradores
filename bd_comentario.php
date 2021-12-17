@@ -14,6 +14,6 @@ if($conexao->query($sql) === TRUE) {
 
 $conexao->close();
 
-header('Location: defalt.php');
+header('Location: melhores-distribuicoes-linux.php');
 exit;
 ?>

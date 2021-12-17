@@ -61,7 +61,7 @@
           </div>
 
           <div class = "grid-item">
-          <a   href  = "melhores-distribuicoes-linux.php"> <img src = "assets\img\imagens\Melhor distribuição para começar no linux.jpg" height = "314px" width = "503px">
+          <a   href  = "melhores-distribuicoes-linux.php"> <img src = "assets\img\imagens\ubuntu.jpg" height = "314px" width = "503px">
           <div class = "grid-text"> <p>Como baixar o Ubuntu</p> </a></div>
           </div>
 
