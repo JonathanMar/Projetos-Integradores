@@ -586,10 +586,11 @@ input[type='submit'] {
   text-transform: uppercase;
   letter-spacing: 4px;
   position: static;
+  bottom: 0;
+  position: fixed;
 }
 
 footer {
-  bottom:0;
   width:100%;
   margin-bottom: 0px;
   height: 4vh;

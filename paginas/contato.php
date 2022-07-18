@@ -20,7 +20,7 @@
      <link href = "assets\favicon.jpg" rel = "apple-touch-icon">
 
      <!-- Css -->
-     <link rel = "stylesheet" href = "css\styles.css">
+     <link rel = "stylesheet" href = "..\css\styles.css">
 
      <!-- Fonts -->
      <link rel  = "preconnect" href                                                                    = "https://fonts.googleapis.com">
